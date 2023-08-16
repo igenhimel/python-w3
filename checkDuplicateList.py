@@ -8,10 +8,10 @@ for _ in range(10):
     random_list = [random.randint(1, 2) for _ in range(5)]
     all_lists.append(random_list)
 
-for random_list in all_lists:
+for sub_list in all_lists:
 
     # Convert the list to a tuple
-    tuple_list = tuple(random_list)
+    tuple_list = tuple(sub_list)
 
     if tuple_list in list_set:
         duplicate_list.append(tuple_list) #duplicate list added 
